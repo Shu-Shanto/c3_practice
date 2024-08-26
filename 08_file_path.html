@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Path</title>
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+      body{
+        margin: 0;
+        padding: 0;
+        font-size: 0.9em;
+        font-family:Arial, Helvetica, sans-serif;
+      }
+      nav{
+        top: 0;
+        position: sticky;
+        position: -webkit-sticky;
+        padding-left: 25px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+        background-color: rgb(128, 207, 212);
+      }
+      nav a{
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 900;
+        color: #444;
+      }
+      nav a:hover{
+        color: #df8585;
+      }
+      section{
+        padding: 0 30px;
+        overflow: hidden;
+        background-color: rgba(117, 174, 179, 0.589);
+      }
+      article{
+        padding: 20px;
+        margin: 20px 0px;
+        line-height: 1.3;
+        letter-spacing: 0.2px;
+        overflow: hidden;
+        border: 1px solid #384a7e83;
+        border-radius: 6px;
+        background-color: rgba(203, 244, 247, 0.61);
+      }
+      h2{
+        font-size: 1.3em;
+        padding: 2px 6px;
+        text-transform: capitalize;
+        border: 1px solid #384a7e83;
+        border-radius: 2px;
+        color: #222;
+        background-color: rgba(255, 247, 247, 0.301);
+      }
+      h3{
+        padding-bottom: 4px;
+        font-size: 1.1em;
+        border-bottom: 0.5px solid rgba(149, 201, 201, 0.904);
+        color: #222;
+      }
+      p{
+        color: #222;
+      }
+      figure{
+        margin: 0;
+        padding: 0;
+      }
+      .figure-body{
+        padding: 0 10px;
+        margin-bottom: 15px;
+      }
+      a{
+        font-size: 13px;
+        display: inline-block;
+        text-transform: capitalize;
+        transition-duration: 200ms;
+      }
+      a:hover{
+        color: rgb(149, 74, 247);
+      }
+      .flex > .colm img{
+        width: 100%;
+        max-height: 250px;
+      }
+      .flex{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:flex-start;
+        gap: 2%;
+      }
+      .flex > .figure,
+      .flex > .colm{
+        max-width: 23.29%;
+        min-width: 100px;
+        margin: 1% 0%;
+        overflow: hidden;
+        background-color: rgb(204, 247, 247);
+        border: 1px solid #384a7e83;
+        border-radius: 6px;
+      }
+      @media only screen and (max-width: 1068px) {
+        .flex > .colm{
+          max-width: 31.78%;
+        }
+      }
+      @media only screen and (max-width: 1068px) {
+        .flex > .colm{
+          max-width: 31.7%;
+        }
+      }
+      @media only screen and (max-width: 577px) {
+        .flex > .colm{
+          max-width: 48.54%;
+        }
+      }
+      @media only screen and (max-width: 850px) {
+        .flex > .colm{
+          max-width: 48.54%;
+        }
+      }
+      @media only screen and (max-width: 540px) {
+        .flex > .colm{
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+     <!-- include section 1 -->
+     <nav>
+       <a href="#sectionOne">section One</a>
+       <a href="#sectionTwo">section two</a>
+       <a href="#sectionThree">section three</a>
+     </nav>
+    <section id="sectionOne">
+      <article>
+        <h2># Some included an image</h2>
+        <div class="flex">
+          <figure>
+            <img
+            src="assets/images/6188925_3192876.jpg"
+            alt="Keep going"
+            width="256"
+            />
+            <div class="figure-body">
+              <h3>Premium photo</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore eveniet maiores dolorem quia, sunt unde labore molestiae ea quibusdam aliquid sint sit, a quidem! Ratione aliquam consequuntur possimus quibusdam maxime!</p>
+              <p>Download 
+                <a href="/assets/book/javascript_tutorial.pdf" download="" title="only pdf downlodable">Now</a>
+              </p>
+            </div>
+          </figure>
+        </div>
+        
+        <div class="flex">
+          <figure>
+            <img
+            src="assets/images/9469988_4192157.jpg"
+            alt="Keep going"
+            width="256"
+            />
+            <div class="figure-body">
+              <h3>Premium photo</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore eveniet maiores dolorem quia, sunt unde labore molestiae ea quibusdam aliquid sint sit, a quidem! Ratione aliquam consequuntur possimus quibusdam maxime!</p>
+              <p>Download 
+                <a href="/assets/book/javascript_tutorial.pdf" download="" title="only pdf downlodable">Now</a>
+              </p>
+            </div>
+          </figure>
+        </div>
+        
+        <div class="flex">
+          <figure>
+            <img
+            src="assets/images/crispy-fried-chicken-plate-with-salad-carrot.jpg"
+            alt="Keep going"
+            width="256"
+            />
+            <div class="figure-body">
+              <h3>Premium photo</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore eveniet maiores dolorem quia, sunt unde labore molestiae ea quibusdam aliquid sint sit, a quidem! Ratione aliquam consequuntur possimus quibusdam maxime!</p>
+              <p>Download 
+                <a href="/assets/book/javascript_tutorial.pdf" download="" title="only pdf downlodable">Now</a>
+              </p>
+            </div>
+          </figure>
+        </div>
+      </article>
+
+      
+    </section>
+    <!-- ended 1st section  -->
+
+    <!-- 2nd section  -->
+    <section id="sectionTwo">
+      <article>
+        <h2># Some included an svg image</h2>
+        <div class="flex">
+          <figure class="figure">
+            <img
+            src="assets/images/svg/agile-method-amico.svg"
+            alt="agile method amico"
+            width="256"
+            />
+            <div class="figure-body">
+              <h3>Premium photo</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore eveniet maiores dolorem quia, sunt unde labore molestiae ea quibusdam aliquid sint sit, a quidem! Ratione aliquam consequuntur possimus quibusdam maxime!</p>
+              <p>Download 
+                <a href="/assets/book/javascript_tutorial.pdf" download="" title="only pdf downlodable">Now</a>
+              </p>
+            </div>
+          </figure>
+
+          <figure class="figure">
+            <img
+            src="assets/images/svg/edit-photo-amico.svg"
+            alt="agile method amico"
+            width="256"
+            />
+            <div class="figure-body">
+              <h3>Premium photo</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore eveniet maiores dolorem quia, sunt unde labore molestiae ea quibusdam aliquid sint sit, a quidem! Ratione aliquam consequuntur possimus quibusdam maxime!</p>
+              <p>Download 
+                <a href="/assets/book/javascript_tutorial.pdf" download="" title="only pdf downlodable">Now</a>
+              </p>
+            </div>
+          </figure>
+
+          <figure class="figure">
+            <img
+            src="assets/images/svg/mobile-development-amico.svg"
+            alt="agile method amico"
+            width="256"
+            />
+            <div class="figure-body">
+              <h3>Premium photo</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore eveniet maiores dolorem quia, sunt unde labore molestiae ea quibusdam aliquid sint sit, a quidem! Ratione aliquam consequuntur possimus quibusdam maxime!</p>
+              <p>Download 
+                <a href="/assets/book/javascript_tutorial.pdf" download="" title="only pdf downlodable">Now</a>
+              </p>
+            </div>
+          </figure>
+        </div>
+      </article>
+    </section>
+    <!-- ended 2nd section    -->
+
+    <!-- 3rd section    -->
+    <section id="sectionThree">  
+      <article>
+        <h2># some file are downlodable & crowsbrowser responsible.</h2>
+        <div class="row flex">
+
+          <div class="colm">
+            <figure>
+              <img
+                src="assets/images/6188925_3192876.jpg"
+                alt="Keep going"
+                width="256"
+              />
+              <div class="figure-body">
+
+                <h3>Premium photo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quo minima enim hic eligendi eveniet ex temporibus excepturi delectus, dignissimos quis qui nemo perferendis? Unde porro ad sapiente id cumque?
+                  <a href="/assets/book/javascript_tutorial.pdf" title="only pdf downlodable" download>download now</a>
+                </p>
+              </div>
+            </figure>
+          </div>
+
+          <div class="colm">
+            <figure>
+              <img
+                src="assets/images/9469988_4192157.jpg"
+                alt="Keep going"
+                width="256"
+              />
+              <div class="figure-body">
+
+                <h3>Premium photo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quo minima enim hic eligendi eveniet ex temporibus excepturi delectus, dignissimos quis qui nemo perferendis? Unde porro ad sapiente id cumque?
+                  <a href="/assets/book/javascript_tutorial.pdf" title="only pdf downlodable" download>download now</a>
+                </p>
+              </div>
+            </figure>
+          </div>
+
+          <div class="colm">
+            <figure>
+              <img
+                src="assets/images/crispy-fried-chicken-plate-with-salad-carrot.jpg"
+                alt="Keep going"
+                width="256"
+              />
+              <div class="figure-body">
+
+                <h3>Premium photo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quo minima enim hic eligendi eveniet ex temporibus excepturi delectus, dignissimos quis qui nemo perferendis? Unde porro ad sapiente id cumque?
+                  <a href="/assets/book/javascript_tutorial.pdf" title="only pdf downlodable" download>download now</a>
+                </p>
+              </div>
+            </figure>
+          </div>
+
+          <div class="colm">
+            <figure>
+              <img
+                src="https://plus.unsplash.com/premium_photo-1674489620667-eaf4a0094996?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Keep going"
+                width="256"
+              />
+              <div class="figure-body">
+
+                <h3>Premium photo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quo minima enim hic eligendi eveniet ex temporibus excepturi delectus, dignissimos quis qui nemo perferendis? Unde porro ad sapiente id cumque?
+                  <a href="/assets/book/javascript_tutorial.pdf" title="only pdf downlodable" download>download now</a>
+                </p>
+              </div>
+            </figure>
+          </div>
+
+          <div class="colm">
+            <figure>
+              <img
+                src="assets/images/svg/agile-method-amico.svg"
+                alt="Keep going"
+                width="256"
+              />
+              <div class="figure-body">
+
+                <h3>Premium photo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quo minima enim hic eligendi eveniet ex temporibus excepturi delectus, dignissimos quis qui nemo perferendis? Unde porro ad sapiente id cumque?
+                  <a href="/assets/book/javascript_tutorial.pdf" title="only pdf downlodable" download>download now</a>
+                </p>
+              </div>
+            </figure>
+          </div>
+
+          <div class="colm">
+            <figure>
+              <img
+                src="assets/images/svg/edit-photo-amico.svg"
+                alt="Keep going"
+                width="256"
+              />
+              <div class="figure-body">
+
+                <h3>Premium photo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quo minima enim hic eligendi eveniet ex temporibus excepturi delectus, dignissimos quis qui nemo perferendis? Unde porro ad sapiente id cumque?
+                  <a href="/assets/book/javascript_tutorial.pdf" title="only pdf downlodable" download>download now</a>
+                </p>
+              </div>
+            </figure>
+          </div>
+          
+          <div class="colm">
+            <figure>
+              <img
+                src="assets/images/svg/mobile-development-amico.svg"
+                alt="Keep going"
+                width="256"
+              />
+              <div class="figure-body">
+
+                <h3>Premium photo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quo minima enim hic eligendi eveniet ex temporibus excepturi delectus, dignissimos quis qui nemo perferendis? Unde porro ad sapiente id cumque?
+                  <a href="/assets/book/javascript_tutorial.pdf" title="only pdf downlodable" download>download now</a>
+                </p>
+              </div>
+            </figure>
+          </div>
+          
+        </div>
+      </article>
+
+    </section><!-- ended 3rd section    -->
+
+  </body>
+</html>
